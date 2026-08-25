@@ -1,6 +1,5 @@
 # Use official Nginx image
-FROM nginx:stable-alpine
-
+FROM nginx:1.29-alpine
 # Remove default nginx website content
 RUN rm -rf /usr/share/nginx/html/*
 
