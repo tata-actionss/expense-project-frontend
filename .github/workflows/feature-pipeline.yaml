@@ -9,7 +9,7 @@ permissions:
 jobs:
   feature-pipeline:
     if: github.ref != 'refs/heads/main'
-    uses: tata-actionss/workflows-reusable/.github/workflows/feature-nodejs-pipeline.yml@main
+    uses: tata-actionss/workflows-reusable/.github/workflows/feature-frontend-pipeline.yaml@main
     with:
       project: roboshop
       component: frontend
@@ -18,7 +18,7 @@ jobs:
 
   dev-pipeline:
     if: github.ref == 'refs/heads/main'
-    uses: tata-actionss/workflows-reusable/.github/workflows/dev-nodejs-pipeline.yml@main
+    uses: tata-actionss/workflows-reusable/.github/workflows/dev-frontend-pipeline.yaml@main
     with:
       project: roboshop
       component: frontend
